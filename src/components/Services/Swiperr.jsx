@@ -7,13 +7,12 @@ import { SwiperInnerTypography, SwiperTypography } from "./ServiceStyle";
 import "swiper/css/navigation";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import { Fade } from "react-reveal";
+
 
 const Swiperr = () => {
   const matches = useMediaQuery("(min-width:950px)");
   const match = useMediaQuery("(min-width:930px)");
-  let fadeArray = ["left", "bottom", "right"];
-
+  
   return (
     <>
       <Box
@@ -49,12 +48,7 @@ const Swiperr = () => {
                 boxSizing: "border-box",
               }}
             >
-              <Fade
-                left={fadeArray[index] === "left" && true}
-                top={fadeArray[index] === "top" && true}
-                right={fadeArray[index] === "right" && true}
-                bottom={fadeArray[index] === "bottom" && true}
-              >
+              
                 <Box>
                   <Box sx={{ textAlign: "center" }}>
                     {" "}
@@ -65,7 +59,7 @@ const Swiperr = () => {
                     {item.desc}
                   </SwiperInnerTypography>
                 </Box>
-              </Fade>
+              
             </SwiperSlide>
           ))}
           <Box

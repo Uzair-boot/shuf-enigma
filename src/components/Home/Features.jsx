@@ -7,12 +7,11 @@ import {
   MidTypography,
 } from "./HomeStyle";
 import { homeFeature } from "../utils/Utils";
-import Fade from "react-reveal";
 
 export default function Features() {
   const myfontsize = useMediaQuery("(max-width: 900px)");
 
-  let fadeArray = ["left", "bottom", "right", "right", "top", "left"];
+  
 
   return (
     <>
@@ -22,19 +21,19 @@ export default function Features() {
             <Grid item xs={2} lg={2}></Grid>
             <Grid xs={8} lg={8} textAlign="center">
               <Box>
-                <Fade right>
+                
                   <HeaderTypography myfontsize={myfontsize}>
                     OUR AWSOME FEATURES
                   </HeaderTypography>
-                </Fade>
-                <Fade left>
+                
+                
                   <GenerelTypography textAlign="center !important">
                     We develop integrated marketing solutions that drive
                     business and boost revenue. We don’t need to outsource your
                     work overseas or to robots. We are real people, with a real
                     passion for what we do.
                   </GenerelTypography>
-                </Fade>
+                
               </Box>
             </Grid>
             <Grid item xs={2} lg={2}></Grid>
@@ -44,12 +43,7 @@ export default function Features() {
             {homeFeature.map((i, index) => {
               return (
                 <Grid key={i} item xs={12} md={6} lg={4}>
-                  <Fade
-                    left={fadeArray[index] === "left" && true}
-                    top={fadeArray[index] === "top" && true}
-                    right={fadeArray[index] === "right" && true}
-                    bottom={fadeArray[index] === "bottom" && true}
-                  >
+                  
                     <FeatureBox>
                       <Box textAlign="center">
                         <Box> {i.img} </Box>
@@ -66,7 +60,7 @@ export default function Features() {
                         <GenerelTypography>{i.desc}</GenerelTypography>
                       </Box>
                     </FeatureBox>
-                  </Fade>
+                  
                 </Grid>
               );
             })}

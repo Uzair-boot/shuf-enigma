@@ -10,7 +10,6 @@ import {
   InnerBox,
   InnerTypography,
 } from "./FooterStyle";
-import { Fade } from "react-reveal";
 
 const Footer = () => {
   return (
@@ -18,7 +17,7 @@ const Footer = () => {
       <Box px={{ xs: 3, sm: 10 }} py={{ xs: 5, sm: 10 }} bgcolor="#0d3256">
         <Grid container spacing={5}>
           <Grid item xs={12} sm={3}>
-            <Fade left>
+            
               <Box
                 sx={{
                   display: "flex",
@@ -36,11 +35,11 @@ const Footer = () => {
                   />
                 </NavLink>
               </Box>
-            </Fade>
+            
           </Grid>
 
           <Grid item xs={12} sm={3}>
-            <Fade left>
+            
               <Box>
                 <HeadingTypography>COMPANY</HeadingTypography>
                 {footerContent.map((item) => {
@@ -58,11 +57,11 @@ const Footer = () => {
                   );
                 })}
               </Box>
-            </Fade>
+            
           </Grid>
 
           <Grid item sx={12} sm={3}>
-            <Fade right>
+            
               <Box>
                 <HeadingTypography>Follow Us</HeadingTypography>
                 <Box
@@ -129,11 +128,11 @@ const Footer = () => {
                   </FollowInnerTypography>
                 </Box>
               </Box>
-            </Fade>
+            
           </Grid>
 
           <Grid item xs={12} sm={3}>
-            <Fade right>
+            
               <Box>
                 <HeadingTypography>CONTACT Us</HeadingTypography>
                 <Box>
@@ -164,7 +163,7 @@ const Footer = () => {
                   ></iframe>
                 </Box>
               </Box>
-            </Fade>
+            
           </Grid>
         </Grid>
         <Divider
@@ -172,7 +171,7 @@ const Footer = () => {
             mt: "1%",
           }}
         />
-        <Fade bottom>
+        
           <Box
             sx={{
               textAlign: "center",
@@ -182,7 +181,7 @@ const Footer = () => {
           >
             &copy; {new Date().getFullYear()} QUH Dock all Rights Reserved.
           </Box>
-        </Fade>
+        
       </Box>
     </>
   );

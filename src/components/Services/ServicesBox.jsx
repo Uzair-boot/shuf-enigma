@@ -3,7 +3,7 @@ import React from "react";
 import { GenerelTypography } from "../Home/HomeStyle";
 import bg from "../../assets/services/bg.png";
 import { ServiceTypography } from "./ServiceStyle";
-import { Fade } from "react-reveal";
+
 
 const ServicesBox = () => {
   const largeScreen = useMediaQuery("(min-width: 1200px)");
@@ -22,7 +22,7 @@ const ServicesBox = () => {
                 textAlign: "center",
               }}
             >
-              <Fade left>
+              
                 <Box mb="5%">
                   <ServiceTypography
                     myfontsize={myfontsize}
@@ -63,11 +63,11 @@ const ServicesBox = () => {
                     </GenerelTypography>
                   </Box>
                 </Box>
-              </Fade>
+              
             </Grid>
             <Grid item xs={12} md={6} lg={6}>
               <Box sx={{ display: { xs: "none", lg: "block" } }}>
-                <Fade right>
+                
                   <img
                     style={{
                       width: "70%",
@@ -76,7 +76,7 @@ const ServicesBox = () => {
                     src={bg}
                     alt=""
                   />
-                </Fade>
+                
               </Box>
             </Grid>
           </Grid>

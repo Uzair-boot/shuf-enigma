@@ -9,7 +9,6 @@ import {
 import Form from "./Form";
 import ScrollArrow from "../ScrollArrow/ScrollArrow";
 import Footer from "../Footer/Footer";
-import { Fade, LightSpeed } from "react-reveal";
 
 export default function Contact() {
   const myfontsize = useMediaQuery("(max-width: 1200px)");
@@ -18,7 +17,7 @@ export default function Contact() {
   return (
     <>
       <Container>
-        <Fade top>
+        
           <Box
             sx={{
               mt: "7%",
@@ -32,7 +31,7 @@ export default function Contact() {
               CONTACT US FOR EXPERT ADVICE
             </HeaderTypography>
           </Box>
-        </Fade>
+        
 
         <Grid
           container
@@ -42,7 +41,7 @@ export default function Contact() {
           alignItems="center"
         >
           <Grid item xs={12} md={12} lg={6}>
-            <Fade left>
+            
               <Box>
                 <img
                   style={{ maxWidth: myfontsize ? "80%" : "100%" }}
@@ -50,11 +49,11 @@ export default function Contact() {
                   alt="Contact Us Image"
                 />
               </Box>
-            </Fade>
+            
           </Grid>
 
           <Grid item xs={12} md={12} lg={6}>
-            <Fade right>
+            
               <Box>
                 <HeaderTypography myfontsize={myfontsize}>
                   HOW WE CAN HELP
@@ -67,18 +66,13 @@ export default function Contact() {
                   here to help and offer you a solution.
                 </GenerelTypography>
               </Box>
-            </Fade>
+            
           </Grid>
         </Grid>
 
         <Grid mt={7} textAlign="center">
           <Box>
-            <LightSpeed left>
-              <MidTypography myfontsize={myfontsize}>
-                Get In Touch
-              </MidTypography>
-              <Typography>Let's discuss about your project.</Typography>
-            </LightSpeed>
+
           </Box>
 
           <Box p="10%">
