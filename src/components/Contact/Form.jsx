@@ -3,7 +3,7 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { SubmitButton, TextFields, TextareaAutosizes } from "./ContactStyle";
 import swal from "sweetalert";
-import Fade from "react-reveal/Fade";
+
 
 export default function Form() {
   const { register, handleSubmit } = useForm();
@@ -20,7 +20,7 @@ export default function Form() {
   return (
     <>
       <form onSubmit={handleSubmit(onSubmission)}>
-        <Fade left>
+        
           <TextFields
             type="text"
             placeholder="Your Name"
@@ -28,9 +28,9 @@ export default function Form() {
             fullWidth
             required
           />
-        </Fade>
+        
 
-        <Fade right>
+        
           <TextFields
             type="email"
             placeholder="Your Email"
@@ -38,9 +38,9 @@ export default function Form() {
             fullWidth
             required
           />
-        </Fade>
+        
 
-        <Fade left>
+        
           <TextFields
             type="text"
             placeholder="Which Service Are You Interested In?"
@@ -48,9 +48,9 @@ export default function Form() {
             fullWidth
             required
           />
-        </Fade>
+        
 
-        <Fade right>
+        
           <TextareaAutosizes
             minRows={10}
             {...register("message")}
@@ -62,11 +62,11 @@ export default function Form() {
               borderRadius: "3px",
             }}
           />
-        </Fade>
+        
 
-        <Fade left>
+        
           <SubmitButton type="submit">Send</SubmitButton>
-        </Fade>
+        
       </form>
     </>
   );

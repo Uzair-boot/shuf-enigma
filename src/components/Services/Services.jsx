@@ -5,7 +5,6 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { MainTypography } from "./ServiceStyle";
 import Footer from "../Footer/Footer";
 import ServicesBox from "./ServicesBox";
-import { Fade } from "react-reveal";
 
 const Services = () => {
   return (
@@ -16,9 +15,9 @@ const Services = () => {
         }}
       >
         <Container>
-          <Fade top>
+          
             <MainTypography>SERVICES</MainTypography>
-          </Fade>
+          
 
           <ServicesBox />
           <Swiperr />

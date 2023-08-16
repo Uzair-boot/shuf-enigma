@@ -8,7 +8,6 @@ import ScrollArrow from "../ScrollArrow/ScrollArrow";
 import Footer from "../Footer/Footer";
 import { NavLink } from "react-router-dom";
 import background from "../../assets/Home/bg.png";
-import Fade from "react-reveal/Fade";
 
 export default function Home() {
   const largeScreen = useMediaQuery("(min-width: 1200px)");
@@ -31,7 +30,7 @@ export default function Home() {
                 textAlign: "center",
               }}
             >
-              <Fade left>
+              
                 <Box>
                   <HeaderTypography
                     myfontsize={myfontsize}
@@ -70,10 +69,10 @@ export default function Home() {
                     </NavLink>
                   </AboutButton>
                 </Box>
-              </Fade>
+              
             </Grid>
             <Grid item xs={12} md={12} lg={6}>
-              <Fade right>
+              
                 <Box sx={{ display: { xs: "none", lg: "block" } }}>
                   <img
                     style={{
@@ -83,7 +82,7 @@ export default function Home() {
                     alt=""
                   />
                 </Box>
-              </Fade>
+              
             </Grid>
           </Grid>
 

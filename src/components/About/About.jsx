@@ -13,7 +13,6 @@ import Footer from "../Footer/Footer";
 import ScrollArrow from "../ScrollArrow/ScrollArrow";
 import { aboutUs } from "../utils/Utils";
 import Goals from "./Goals";
-import { Slide, Fade } from "react-reveal";
 
 export default function About() {
   const myfontsize = useMediaQuery("(max-width: 900px)");
@@ -28,11 +27,11 @@ export default function About() {
       >
         <Container>
           <Box mt={5} textAlign="center">
-            <Fade top>
+            
               <HeaderTypography myfontsize={myfontsize}>
                 ABOUT US
               </HeaderTypography>
-            </Fade>
+            
           </Box>
           {aboutUs.map((i, index) => {
             if (index % 2) {
@@ -46,7 +45,7 @@ export default function About() {
                   alignItems="center"
                 >
                   <Grid item xs={12} md={12} lg={6}>
-                    <Fade left>
+                    
                       <Box>
                         <HeaderTypography myfontsize={myfontsize}>
                           {i.ourHead}
@@ -54,10 +53,10 @@ export default function About() {
 
                         <GenerelTypography>{i.desc}</GenerelTypography>
                       </Box>
-                    </Fade>
+                    
                   </Grid>
                   <Grid item xs={12} md={12} lg={6}>
-                    <Fade right>
+                    
                       <Box>
                         <img
                           style={{ maxWidth: "100%", width: "80%" }}
@@ -65,7 +64,7 @@ export default function About() {
                           alt="about Us Image"
                         />
                       </Box>
-                    </Fade>
+                    
                   </Grid>
                   <Grid item xs={12} lg={12}>
                     <Goals />
@@ -84,7 +83,7 @@ export default function About() {
                     alignItems="center"
                   >
                     <Grid item xs={12} md={12} lg={6}>
-                      <Fade left>
+                      
                         <Box>
                           <img
                             style={{ maxWidth: "100%", width: "80%" }}
@@ -92,10 +91,10 @@ export default function About() {
                             alt="Contact Us Image"
                           />
                         </Box>
-                      </Fade>
+                      
                     </Grid>
                     <Grid item xs={12} md={12} lg={6}>
-                      <Fade right>
+                      
                         <Box>
                           <HeaderTypography myfontsize={myfontsize}>
                             {i.ourHead}
@@ -103,26 +102,13 @@ export default function About() {
 
                           <GenerelTypography>{i.desc}</GenerelTypography>
                         </Box>
-                      </Fade>
+                      
                     </Grid>
                   </Grid>
 
                   <AboutBox mt={5}>
                     <Grid container>
                       <Grid item xs={12} md={6} lg={6}>
-                        <Slide left>
-                          <Box>
-                            <AboutTypography myfontsize={myfontsize}>
-                              LET'S WORK TOGETHER
-                            </AboutTypography>
-                            <AboutGenerelTypography
-                              color="#FFFFFF"
-                              textAlign="center"
-                            >
-                              Do you want to grow your business online?
-                            </AboutGenerelTypography>
-                          </Box>
-                        </Slide>
                       </Grid>
 
                       <Grid item xs={12} md={6} lg={6}>
@@ -133,9 +119,6 @@ export default function About() {
                             color: isActive ? "#79B5D9" : "#000000",
                           })}
                         >
-                          <Slide right>
-                            <AboutButton>GET IN TOUCH</AboutButton>
-                          </Slide>
                         </NavLink>
                       </Grid>
                     </Grid>
