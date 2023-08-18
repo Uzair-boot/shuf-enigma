@@ -33,7 +33,6 @@ export const ContactButton = styled(Button)`
 export const HeaderTypography = styled(Typography)`
   font-size: ${({ myfontsize }) => (myfontsize ? "20px" : "52px")};
   font-weight: 700;
-  color: #184e93;
 `;
 export const GenerelTypography = styled(Typography)`
   padding-left: 4%;
@@ -49,9 +48,9 @@ export const AboutButton = styled(Button)`
   padding-right: 3%;
   margin-top: 4%;
   font-weight: bold;
-  background-color: #184e93;
+  background-color: #116d6e;
   &:hover {
-    background-color: #184e93a1;
+    background-color: #4e3636;
     color: #black;
   }
 `;
@@ -65,9 +64,10 @@ export const FeatureBox = styled(Box)`
   border-radius: 10px;
   padding-top: 10%;
   padding-bottom: 10%;
-  border-top: 7px solid #184e93;
-  border-bottom: 7px solid #79b5d9;
+  border-top: 7px solid #116d6e;
+  border-bottom: 7px solid #4e3636;
   // width: 100%;
+  // background-color: #4e3636;
   height: 300px;
   box-shadow: 0px 0px 10px 1px #cbd5e0;
   &:hover {
@@ -82,26 +82,50 @@ export const MidTypography = styled(Typography)`
   color: #184e93;
 `;
 
-export const TechBox = styled(Box)`
-  //    border: 1px solid #CBD5E0;
-  width: 80%;
-  height: 130px;
-  text-align: center;
-  padding: 5%;
-  margin-top: 6%;
-  transition: 1s;
-  box-shadow: 0px 0px 10px 4px #cbd5e0;
-  border-radius: 10px;
-  &:hover {
-    background-color: #cbd5e0;
-    transition: all 0.2s ease-out;
-    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-    top: -4px;
-    border: 1px solid #cccccc;
-    border-left: 4px solid #184e93;
-    background-color: white;
-  }
-`;
+// export const TechBox = styled(Box)`
+//   //    border: 1px solid #CBD5E0;
+//   width: 80%;
+//   height: 130px;
+//   text-align: center;
+//   padding: 5%;
+//   margin-top: 6%;
+//   transition: 1s;
+//   box-shadow: 0px 0px 10px 4px #cbd5e0;
+//   border-radius: 10px;
+//   transition: all 0.2s ease-out;
+//   &:hover {
+//     transform: "scale(0.9)";
+//     // boxShadow: '0px 0px 10px 4px #cbd5e0';
+//     // background-color: #cbd5e0;
+//     // box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+//     // // top: -4px;
+//     // border: 1px solid #cccccc;
+//     // border-left: 4px solid #184e93;
+//     // background-color: white;
+//   }
+// `;
+
+export const TechBox = styled(Box)(() => ({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-evenly",
+  alignItems: "center",
+  backgroundColor: "#1F1817",
+  color: "white",
+  cursor: "pointer",
+  height: "170px",
+  width: "85%",
+  textAlign: "left",
+  boxShadow: "0px 0px 2px 1px #cbd5e0",
+  borderRadius: "10px",
+  border: "1px solid #cbd5e0",
+  transition: "0.3s",
+  "&:hover": {
+    transform: "scale(0.9)",
+    boxShadow: "0px 0px 10px 4px #cbd5e0",
+  },
+}));
+
 export const TestBox = styled(Box)`
   background-color: #000000;
   color: #ffffff;
@@ -142,6 +166,6 @@ border-radius: 10px;
    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
    top: -4px;
    border: 1px solid #cccccc;
- border-left: 4px solid #184E93; 
+ border-left: 4px solid #4e3636; 
    background-color: white;
 `;

@@ -4,7 +4,9 @@ import { Box, Grid, useMediaQuery, Container } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import { headerContent } from "../utils/Utils";
 import logo from "../../assets/logo.png";
+import logog from "../../assets/SHUFCOBlack.svg";
 import "../../App.css";
+import { SharedLogowhite } from "../utils/sharedLogo";
 
 export default function Header() {
   const myDisplay = useMediaQuery("(max-width: 900px)");
@@ -13,7 +15,7 @@ export default function Header() {
     <Box
       id="header"
       style={{
-        background: "#FFFFFF",
+        background: "#3F2305",
         position: "sticky",
         top: "0",
         width: "100%",
@@ -30,11 +32,9 @@ export default function Header() {
         >
           <Box flexGrow="1" mt="1%">
             <NavLink to="/">
-              <img
-                style={{ maxWidth: "100%", width: "10%" }}
-                src={logo}
-                alt=""
-              />
+              <Box className="image-container">
+                <SharedLogowhite />
+              </Box>
             </NavLink>
           </Box>
           <Box sx={{}}>
@@ -54,11 +54,9 @@ export default function Header() {
             sx={{ display: { sm: "none", xs: "none", md: "block" } }}
           >
             <NavLink to="/">
-              <img
-                style={{ maxWidth: "100%", width: "17%" }}
-                src={logo}
-                alt="logo"
-              />
+              <Box className="image-container">
+                <SharedLogowhite />
+              </Box>
             </NavLink>
           </Grid>
 
@@ -82,7 +80,7 @@ export default function Header() {
                       smooth
                       style={({ isActive }) => ({
                         textDecoration: "none",
-                        color: isActive ? "#79B5D9" : "#000000",
+                        color: isActive ? "#116D6E" : "#fff",
                       })}
                     >
                       {item}

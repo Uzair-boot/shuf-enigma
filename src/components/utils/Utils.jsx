@@ -65,7 +65,7 @@ export const headerContent = [
   "FAQs",
   "About ",
   "Contact Us",
-  "Life at QUH Dock"
+  // "Life at QUH Dock"
 ];
 
 export const portfolioContent = [
@@ -221,43 +221,42 @@ export const homeFeature = [
   },
 ];
 
+import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
+import AddBusinessIcon from "@mui/icons-material/AddBusiness";
+import DevicesIcon from "@mui/icons-material/Devices";
+import InterpreterModeIcon from "@mui/icons-material/InterpreterMode";
+import DinnerDiningIcon from "@mui/icons-material/DinnerDining";
+import WebAssetIcon from "@mui/icons-material/WebAsset";
+
 export const Technology = [
   {
-    img: ecom,
+    img: <PointOfSaleIcon />,
+    name: "Point of Sale",
+  },
+  {
+    img: <AddBusinessIcon />,
     name: "E-commerce",
   },
   {
-    img: it,
+    img: <DevicesIcon />,
     name: "IT & Startups",
   },
   {
-    img: education,
-    name: "Education & E-Learning",
-  },
-  {
-    img: erp,
+    img: <InterpreterModeIcon />,
     name: "ERP System",
   },
   {
-    img: food,
+    img: <DinnerDiningIcon />,
     name: "Food & Restaurant",
   },
   {
-    img: medical,
-    name: "Medical & Healthcare",
-  },
-  {
-    img: portfolio,
+    img: <WebAssetIcon />,
     name: "Portfolio Site",
   },
-  {
-    img: awsservices,
-    name: "AWS Deployments",
-  },
-  {
-    img: gaming,
-    name: "Gaming",
-  },
+  // {
+  //   img: awsservices,
+  //   name: "AWS Deployments",
+  // },
 ];
 
 export const testimonial = [
